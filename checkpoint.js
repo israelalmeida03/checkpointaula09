@@ -1,16 +1,3 @@
-/*
-Sala:
-Integrantes: 
-
-*/
-
-//Aula 09 - Checkpoint - Microondas
-/*Alimentos e seus respectivos tempos em segundos:
-1 - Pipoca – 10 segundos (padrão);
-2 - Macarrão – 8 segundos (padrão);
-3 - Carne – 15 segundos (padrão);
-4 - Feijão – 12 segundos (padrão);
-5 - Brigadeiro – 8 segundos (padrão);*/
 
 /*
 Sala: 
