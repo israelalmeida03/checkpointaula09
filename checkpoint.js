@@ -3,7 +3,8 @@ Sala:
 Integrantes: 
 
 */
-//Microondas
+
+//Aula 09 - Checkpoint - Microondas
 /*Alimentos e seus respectivos tempos em segundos:
 1 - Pipoca – 10 segundos (padrão);
 2 - Macarrão – 8 segundos (padrão);
@@ -39,67 +40,39 @@ function microondas(opcao, tempoSelecionado){
         opcaoSelecionada = "Brigadeiro"
         tempoPadrao = 8;
     }
+
+    function verificacao(){
+        console.log("Opção selecionada: "+opcaoSelecionada +"\nTempo definido: " +tempoSelecionado+ " segundos");
+        if(tempoSelecionado>= (tempoPadrao * 2) && tempoSelecionado < (tempoPadrao * 3) ){
+            console.log("A comida queimou!!!")
+        }else if(tempoSelecionado < tempoPadrao){
+            console.log("Tempo insuficiente")
+        }else if(tempoSelecionado >= (tempoPadrao * 3)){
+            console.log("Kabuummmm!!!!!")
+        }else{
+            console.log("Prato pronto, bom apetite")
+        }
+        return verificacao;
+    }
    
     switch(opcao){
         case 1 : //Pipoca-10s
-            console.log("Opção selecionada: "+opcaoSelecionada +"\nTempo definido: " +tempoSelecionado+ " segundos");
-            if(tempoSelecionado>= (tempoPadrao * 2) && tempoSelecionado < (tempoPadrao * 3) ){
-                console.log("A comida queimou!!!")
-            }else if(tempoSelecionado < tempoPadrao){
-                console.log("Tempo insuficiente")
-            }else if(tempoSelecionado >= (tempoPadrao * 3)){
-                console.log("Kabuummmm!!!!!")
-            }else{
-                console.log("Prato pronto, bom apetite")
-            }
+            verificacao();
             break;
+
         case 2: //Macarrao-8s
-        console.log("Opção selecionada: "+opcaoSelecionada +"\nTempo definido: " +tempoSelecionado+ " segundos");
-            if(tempoSelecionado>= (tempoPadrao * 2) && tempoSelecionado < (tempoPadrao * 3) ){
-                console.log("A comida queimou!!!")
-            }else if(tempoSelecionado < tempoPadrao){
-                console.log("Tempo insuficiente")
-            }else if(tempoSelecionado >= (tempoPadrao * 3)){
-                console.log("Kabuummmm!!!!!")
-            }else{
-                console.log("Prato pronto, bom apetite")
-            }
+            verificacao();
             break;
+
         case 3: //Carne-15s
-        console.log("Opção selecionada: "+opcaoSelecionada +"\nTempo definido: " +tempoSelecionado+ " segundos");
-            if(tempoSelecionado>= (tempoPadrao * 2) && tempoSelecionado < (tempoPadrao * 3) ){
-                console.log("A comida queimou!!!")
-            }else if(tempoSelecionado < tempoPadrao){
-                console.log("Tempo insuficiente")
-            }else if(tempoSelecionado >= (tempoPadrao * 3)){
-                console.log("Kabuummmm!!!!!")
-            }else{
-                console.log("Prato pronto, bom apetite")
-            }
+            verificacao();
             break;
+
         case 4: //Feijao-12s
-        console.log("Opção selecionada: "+opcaoSelecionada +"\nTempo definido: " +tempoSelecionado+ " segundos");
-            if(tempoSelecionado>= (tempoPadrao * 2) && tempoSelecionado < (tempoPadrao * 3) ){
-                console.log("A comida queimou!!!")
-            }else if(tempoSelecionado < tempoPadrao){
-                console.log("Tempo insuficiente")
-            }else if(tempoSelecionado >= (tempoPadrao * 3)){
-                console.log("Kabuummmm!!!!!")
-            }else{
-                console.log("Prato pronto, bom apetite")
-            }
+            verificacao();
             break;
         case 5: //Brigadeiro-8s
-        console.log("Opção selecionada: "+opcaoSelecionada +"\nTempo definido: " +tempoSelecionado+ " segundos");
-            if(tempoSelecionado>= (tempoPadrao * 2) && tempoSelecionado < (tempoPadrao * 3) ){
-                console.log("A comida queimou!!!")
-            }else if(tempoSelecionado < tempoPadrao){
-                console.log("Tempo insuficiente")
-            }else if(tempoSelecionado >= (tempoPadrao * 3)){
-                console.log("Kabuummmm!!!!!")
-            }else{
-                console.log("Prato pronto, bom apetite")
-            }
+            verificacao();
             break;
 
             default: //Nenhuma das opções
@@ -108,5 +81,4 @@ function microondas(opcao, tempoSelecionado){
             }
             }
       
-        
-        microondas(1, 24)
+        microondas(2, 15)
